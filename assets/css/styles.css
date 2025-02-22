@@ -54,11 +54,6 @@ h1 {
     background-color: #ff8c00;
 }
 
-a {
-  text-decoration: none;
-  color: #ffa500;
-}
-
 .social-links {
   display: flex;
   gap: 15px;
@@ -68,10 +63,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  color: #ffa500;
-  border-radius: 50%;
-  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  border: none; /* Убираем обводку у кнопки */
+  font-size: 16px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
@@ -80,5 +78,5 @@ a {
 }
 
 .social-icon i {
-  margin: 0;
+  margin-right: 8px;
 }
