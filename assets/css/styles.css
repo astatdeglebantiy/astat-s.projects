@@ -77,8 +77,8 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 10px 10px;
-  background-color: #ffa500;
-  color: white;
+  background-color: #333;
+  color: #ffa500;
   border-radius: 5px;
   border: none; /* Убираем обводку у кнопки */
   font-size: 20px;
