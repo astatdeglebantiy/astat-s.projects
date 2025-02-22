@@ -9,6 +9,12 @@ header {
     padding: 20px;
 }
 
+.footer {
+    text-align: center;
+    position: relative;
+    margin-top: 20%;
+}
+
 .avatar {
     width: 100px;
     border-radius: 50%;
