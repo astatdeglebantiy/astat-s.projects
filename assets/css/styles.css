@@ -8,7 +8,7 @@ body {
 hr {
     border: none;
     height: 2px;
-    background-color: #ffa500; /* Цвет полосы */
+    background-color: rgba(255, 165, 0, 0.5); /* 50% прозрачности */
     margin: 20px 0; /* Отступы сверху и снизу */
 }
 
