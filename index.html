@@ -1,39 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Мои проекты</title>
+  <title>Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="astat.png" alt="Astat de Glebantiy" class="avatar">
-    <h1>Мои проекты</h1>
+    <div class="container">
+      <div class="logo">
+        <!-- Замените "avatar.jpg" на файл вашей аватарки -->
+        <img src="avatar.png" alt="Astat de Glebantiy">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
+
   <main>
-    <section class="projects">
-      <div class="project">
-        <h2>Проект 1</h2>
-        <p>Краткое описание проекта 1.</p>
-        <a href="https://github.com/astatdeglebantiy/project1" target="_blank">Смотреть на GitHub</a>
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search projects..." onkeyup="filterProjects()">
+    </section>
+    <section class="projects-list">
+      <!-- Каждый проект имеет data-атрибут для поиска -->
+      <div class="project-card" data-title="Project Alpha">
+        <h2>Project Alpha</h2>
+        <p>A brief description of Project Alpha.</p>
+        <a href="project-alpha.html">Read More</a>
       </div>
-      <div class="project">
-        <h2>Проект 2</h2>
-        <p>Краткое описание проекта 2.</p>
-        <a href="https://github.com/astatdeglebantiy/project2" target="_blank">Смотреть на GitHub</a>
+      <div class="project-card" data-title="Project Beta">
+        <h2>Project Beta</h2>
+        <p>A brief description of Project Beta.</p>
+        <a href="project-beta.html">Read More</a>
       </div>
-      <div class="project">
-        <h2>Проект 3</h2>
-        <p>Краткое описание проекта 3.</p>
-        <a href="https://github.com/astatdeglebantiy/project3" target="_blank">Смотреть на GitHub</a>
+      <div class="project-card" data-title="Project Gamma">
+        <h2>Project Gamma</h2>
+        <p>A brief description of Project Gamma.</p>
+        <a href="project-gamma.html">Read More</a>
       </div>
+      <!-- Добавьте дополнительные проекты по необходимости -->
     </section>
   </main>
-  
+
   <footer>
-    <p>&copy; 2025 Astat</p>
+    <p>&copy; 2025 Your Name</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
