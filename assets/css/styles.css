@@ -25,6 +25,10 @@ h1 {
     font-size: 2em;
 }
 
+.project-description {
+    margin: 0 20px;
+}
+
 .projects {
     margin-top: 20px;
 }
