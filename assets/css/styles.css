@@ -5,6 +5,13 @@ body {
     text-align: center;
 }
 
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffa500; /* Цвет полосы */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
 header {
     padding: 20px;
 }
