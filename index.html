@@ -1,71 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astat de Glebantiy - Проекты</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #FFA500;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #FFA500;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        .project {
-            background-color: #1E1E1E;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.5);
-        }
-        .project a {
-            color: #FFA500;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <title>Astat de Glebantiy - Projects</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <img src="avatar.png" alt="Аватар" class="avatar">
+    <header>
+        <img src="avatar.png" alt="Astat de Glebantiy" class="avatar">
         <h1>Astat de Glebantiy</h1>
-        <h2>Мои проекты</h2>
-        <div id="projects"></div>
-    </div>
-    
-    <script>
-        const projects = [
-            { name: "Проект 1", description: "Описание проекта 1", repo: "https://github.com/user/project1" },
-            { name: "Проект 2", description: "Описание проекта 2", repo: "https://github.com/user/project2" }
-        ];
-        
-        const projectsContainer = document.getElementById("projects");
-        projects.forEach(project => {
-            const projectElement = document.createElement("div");
-            projectElement.classList.add("project");
-            projectElement.innerHTML = `
-                <h3>${project.name}</h3>
-                <p>${project.description}</p>
-                <a href="${project.repo}" target="_blank">Репозиторий</a>
-            `;
-            projectsContainer.appendChild(projectElement);
-        });
-    </script>
+    </header>
+    <main>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project Name</h3>
+                <p>Description of the project goes here.</p>
+                <a href="project1.html" class="btn">View Project</a>
+                <a href="https://github.com/yourrepo/project1" class="btn" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="project">
+                <h3>Another Project</h3>
+                <p>Short description of another project.</p>
+                <a href="project2.html" class="btn">View Project</a>
+                <a href="https://github.com/yourrepo/project2" class="btn" target="_blank">GitHub Repo</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
