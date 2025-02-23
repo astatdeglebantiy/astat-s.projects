@@ -51,7 +51,7 @@ h1 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
+    gap: 2%;
     margin: 0 25%;
 }
 
@@ -59,7 +59,7 @@ h1 {
     width: 100%;
     height: auto;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5%;
     transition: transform 0.3s;
 }
 
