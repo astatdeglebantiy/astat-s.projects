@@ -41,21 +41,3 @@ title: Astat's Projects - Gemini bot in telegram
     <h5>Version: 0.5.1+ALPHA-pre-release</h5>
     <!-- <a href="https://github.com/yourrepo/project" class="btn" target="_blank">GitHub Repo</a> -->
 </main>
-
-<script>
-    // Открытие модального окна и замена изображения на полное
-    function openModal(img) {
-      var modal = document.getElementById("myModal");
-      var modalImg = document.getElementById("imgModal");
-      var captionText = document.getElementById("caption");
-      modal.style.display = "block";
-      // Предполагается, что полная версия изображения без суффикса _thumb
-      modalImg.src = img.src.replace('_thumb', '');
-      captionText.innerHTML = img.alt;
-    }
-    // Закрытие модального окна
-    function closeModal() {
-      var modal = document.getElementById("myModal");
-      modal.style.display = "none";
-    }
-  </script>
