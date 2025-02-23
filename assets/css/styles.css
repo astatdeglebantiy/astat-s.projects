@@ -57,7 +57,7 @@ h1 {
 
 .gallery img {
     width: 100%;
-    height: auto;
+    height: 90%;
     cursor: pointer;
     border-radius: 5%;
     transition: transform 0.3s;
