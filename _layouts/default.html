@@ -17,5 +17,22 @@
     {{ content }}
   </div>
     {% include footer.html %}
+    <script>
+    // Открытие модального окна и замена изображения на полное
+    function openModal(img) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("imgModal");
+      var captionText = document.getElementById("caption");
+      modal.style.display = "block";
+      // Предполагается, что полная версия изображения без суффикса _thumb
+      modalImg.src = img.src.replace('_thumb', '');
+      captionText.innerHTML = img.alt;
+    }
+    // Закрытие модального окна
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 </html>
